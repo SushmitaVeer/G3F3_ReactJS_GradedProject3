@@ -1,0 +1,76 @@
+.favorite-list {
+    padding: 20px;
+}
+
+.favorite-movie {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.favorite-movie-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.favorite-poster {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.favorite-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.remove-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.notification-text {
+    margin-right: 10px;
+}
+
+.close-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .favorite-movie-item {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .favorite-movie-item {
+        width: 100%;
+    }
+}
